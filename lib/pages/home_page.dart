@@ -21,7 +21,7 @@ class HomePage extends StatelessWidget {
           children: [
             CircleAvatar(
               radius: 56,
-              backgroundImage: const AssetImage('assets/avatar.png'),
+              backgroundImage: const AssetImage('assets/rohanLinkedInImage.jpeg'),
               backgroundColor: cs.primary.withValues(alpha: .15),
             ),
             SizedBox(
@@ -40,8 +40,8 @@ class HomePage extends StatelessWidget {
                     runSpacing: 8,
                     children: [
                       FilledButton(onPressed: ()=>launchUrlString('mailto:developerrohan01@gmail.com'), child: const Text("Contact Me")),
-                      OutlinedButton(onPressed: ()=>launchUrlString("github.com"), child: Text('Github')),
-                      OutlinedButton(onPressed: ()=>launchUrlString("Linkedin.com"), child: const Text("Linkedin")),
+                      OutlinedButton(onPressed: ()=>launchUrlString("https://github.com/deadhack1"), child: Text('Github')),
+                      OutlinedButton(onPressed: ()=>launchUrlString('https://www.linkedin.com/in/rohan-flutter-developer',mode: LaunchMode.platformDefault), child: const Text("Linkedin")),
                     ],
                   )
                 ],
