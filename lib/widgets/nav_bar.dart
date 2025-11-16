@@ -26,6 +26,15 @@ class SiteNavBar extends StatelessWidget{
           _NavLink(label: 'About', onTap: ()=>context.go('/about')),
 
           _NavLink(label: 'Contact', onTap: ()=>context.go('/contact')),
+          Padding(padding: const EdgeInsets.symmetric(horizontal: 12.0),
+              child: Tooltip(
+                message: isDark?'Switch to Light Mode':'Switch to Dark Mode',
+                child: IconButton(
+                  onPressed: ThemeController.instance.toggle,
+                  icon: Icon(isDark?Icons.wb_sunny_rounded:Icons.dark_mode_rounded),
+                ),
+              )
+          )
         ]else ...[
           PopupMenuButton(itemBuilder: (context)=>[
             PopupMenuItem(

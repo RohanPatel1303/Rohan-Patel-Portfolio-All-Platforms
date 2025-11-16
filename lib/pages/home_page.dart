@@ -15,7 +15,7 @@ class HomePage extends StatelessWidget {
         children: [
           Container(
             padding: const EdgeInsets.symmetric(vertical: 64),
-            color: cs.primary.withOpacity(0.7),
+            color: cs.primary.withValues(alpha: 0.7),
             child: Section(
               child: Wrap(
                 runSpacing: 24,
@@ -26,7 +26,7 @@ class HomePage extends StatelessWidget {
                     radius: 56,
                     backgroundImage:
                         const AssetImage('assets/rohanLinkedInImage.jpeg'),
-                    backgroundColor: cs.primary.withOpacity(0.15),
+                    backgroundColor: cs.primary.withValues(alpha: 0.15),
                   ),
                   SizedBox(
                     width: 640,
@@ -44,7 +44,7 @@ class HomePage extends StatelessWidget {
                           height: 12,
                         ),
                         Text(
-                          'I build fast , accessible apps for mobile and web platforms. Here are a few Highlights and recent projects',
+                          'I build fast , accessible apps for mobile and web platforms.Currently Looking For Full Time Opportunities',
                           style: Theme.of(context).textTheme.titleMedium,
                         ),
                         const SizedBox(
@@ -58,11 +58,21 @@ class HomePage extends StatelessWidget {
                                 onPressed: () => launchUrlString(
                                     'mailto:developerrohan01@gmail.com'),
                                 child: const Text("Contact Me")),
-                            OutlinedButton(
+                            FilledButton(
                                 onPressed: () => launchUrlString(
                                     "https://github.com/deadhack1"),
-                                child: const Text('Github')),
-                            OutlinedButton(
+                              style: ButtonStyle(
+                                backgroundColor:WidgetStatePropertyAll(Colors.green),
+                                foregroundColor: WidgetStatePropertyAll(Colors.black)
+                              ),
+                                child: const Text('Github'),
+
+                            ),
+                            FilledButton(
+                                style: ButtonStyle(
+                                    backgroundColor:WidgetStatePropertyAll(Colors.white),
+                                    foregroundColor: WidgetStatePropertyAll(Colors.blue)
+                                ),
                                 onPressed: () => launchUrlString(
                                     'https://www.linkedin.com/in/rohan-flutter-developer',
                                     mode: LaunchMode.platformDefault),
@@ -81,7 +91,7 @@ class HomePage extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                "Recent Projects",
+                "Tech Stack",
                 style: Theme.of(context)
                     .textTheme
                     .headlineSmall!
