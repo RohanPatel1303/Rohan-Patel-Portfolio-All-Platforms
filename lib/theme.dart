@@ -20,15 +20,15 @@ class AppTheme{
 
   static ThemeData baseDark() => ThemeData(
     colorScheme: const ColorScheme.dark(
-      primary: Color(0xFF38BDF8), // sky-400
+      primary: Color(0xffB8CDF8), // sky-400
       secondary: Color(0xFF22C55E),
-      surface: Color(0xFF0B1220),
+      surface: Color(0xff41463D),
       onSurface: Color(0xFFE2E8F0),
     ),
     useMaterial3: true,
     textTheme: GoogleFonts.interTextTheme(ThemeData.dark().textTheme),
     appBarTheme: const AppBarTheme(
-      backgroundColor: Color(0xFF0B1220),
+      backgroundColor: Color(0xff41463D),
       elevation: 0,
       centerTitle: false,
     ),

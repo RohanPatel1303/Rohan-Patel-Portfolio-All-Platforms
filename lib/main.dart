@@ -31,7 +31,7 @@ class PortfolioApp extends StatelessWidget {
               GoRoute(path: "/",builder: (context,state)=>const HomePage()),
               GoRoute(path: '/projects',builder: (context,state)=>const ProjectsPage()),
               GoRoute(path: '/about',builder: (context,state)=>const AboutPage()),
-              GoRoute(path: '/contact',builder: (context,state)=>const ContactPage()),
+              // GoRoute(path: '/contact',builder: (context,state)=>const ContactPage()),
     ]
 
           )

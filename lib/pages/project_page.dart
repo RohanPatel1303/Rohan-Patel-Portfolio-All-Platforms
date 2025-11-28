@@ -60,6 +60,13 @@ class _ProjectCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Card(
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(12),
+        side: BorderSide(
+          color: Theme.of(context).dividerColor,
+          width: 2,
+        ),
+      ),
       elevation: 0,
       surfaceTintColor: Colors.transparent,
       child: Padding(

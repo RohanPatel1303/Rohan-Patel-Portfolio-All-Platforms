@@ -39,6 +39,8 @@ dependencies:
   firebase_messaging:
   firebase_auth:
   firebase_ai:
+  path_provider:
+  open_filex:
 
 
 

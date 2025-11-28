@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:rohan_portfolio_website/theme_controller.dart';
 
 class SiteNavBar extends StatelessWidget{
@@ -11,13 +12,33 @@ class SiteNavBar extends StatelessWidget{
     final isDark=mode==ThemeMode.dark||(mode==ThemeMode.system && MediaQuery.platformBrightnessOf(context)==Brightness.dark);
     return AppBar(
       titleSpacing: 24,
-      title: InkWell(
-        onTap: ()=> context.go('/'),
-        child: const Text(
-          'Rohan Patel',
-          style: TextStyle(fontWeight: FontWeight.w700),
-        ),
-        ),
+      title: Row(
+        children: [
+          Tooltip(
+            message: "Rohan Deadhack",
+            child: Container(
+              child: Text("RD",style: GoogleFonts.sarpanch(
+                fontSize: 36,
+                fontWeight: FontWeight.w700
+              ),
+              ),
+            ),
+          ),
+          const SizedBox(width: 10,),
+          Flexible(
+            child: Tooltip(
+              message: "Rohan Patel",
+              child: InkWell(
+                onTap: ()=> context.go('/'),
+                child: const Text(
+                  'Rohan Patel',
+                  style: TextStyle(fontWeight: FontWeight.w500),
+                ),
+                ),
+            ),
+          ),
+        ],
+      ),
       actions: [
         if(isWide)...[
           _NavLink(label: 'Home', onTap: ()=>context.go('/')),
@@ -25,7 +46,7 @@ class SiteNavBar extends StatelessWidget{
 
           _NavLink(label: 'About', onTap: ()=>context.go('/about')),
 
-          _NavLink(label: 'Contact', onTap: ()=>context.go('/contact')),
+          // _NavLink(label: 'Contact', onTap: ()=>context.go('/contact')),
           Padding(padding: const EdgeInsets.symmetric(horizontal: 12.0),
               child: Tooltip(
                 message: isDark?'Switch to Light Mode':'Switch to Dark Mode',
@@ -47,9 +68,9 @@ class SiteNavBar extends StatelessWidget{
             PopupMenuItem(onTap:()=>context.go('/about'),
                 child: const Text('About')
             ),
-            PopupMenuItem(onTap:()=>context.go('/contact'),
-                child: const Text('Contact')
-            ),
+            // PopupMenuItem(onTap:()=>context.go('/contact'),
+            //     child: const Text('Contact')
+            // ),
           ],
           ),
           Padding(padding: const EdgeInsets.symmetric(horizontal: 12.0),
