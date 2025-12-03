@@ -41,6 +41,7 @@ dependencies:
   firebase_ai:
   path_provider:
   open_filex:
+  flutter_lints:
 
 
 
