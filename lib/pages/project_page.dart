@@ -30,7 +30,7 @@ class _ProjectsPageState extends State<ProjectsPage> {
     ProjectData(
       title: 'Rohan Portfolio Website',
       description: 'A portfolio website to showcase my work and skills.',
-      tech: ['Flutter', 'Dart', 'CI/CD', 'Freezed', 'GoRouter'],
+      tech: ['Flutter', 'Dart', 'CI/CD', 'GoRouter'],
       repoUrl:
       'https://github.com/RohanPatel1303/Rohan-Patel-Portfolio-All-Platforms.git',
       demoUrl: "https://rohandeadhackportfolio.netlify.app",
