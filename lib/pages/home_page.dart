@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:rohan_portfolio_website/widgets/fade_slide_in.dart';
-import 'package:url_launcher/url_launcher.dart';
+import 'package:rohan_portfolio_website/widgets/course_card.dart';
 import 'package:url_launcher/url_launcher_string.dart';
 
 import '../widgets/sections.dart';
@@ -194,6 +194,43 @@ class HomePage extends StatelessWidget {
                   "Developed Flutter-based mobile applications including 'Kaizen' (published on Play Store) and an internal Canteen billing app. Integrated user authentication, QR scanning, and real-time data sync. Led a group of interns and gathered direct user feedback to improve UX.",
                   skills: const ['Flutter', 'Dart', 'Firebase', 'Play Store Publishing', 'Team Leadership'],
                   delay: 400,
+                ),
+              ],
+            ),
+          ),
+          Section(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  "Courses & Certifications",
+                  style: Theme.of(context).textTheme.headlineSmall!.copyWith(
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+                const SizedBox(height: 16),
+                CourseCard(
+                  title: "Flutter & Dart - The Complete Guide",
+                  platform: "Udemy",
+                  date: "2023",
+                ),
+                const SizedBox(height: 12),
+                CourseCard(
+                  title: "The Complete 2023 Web Development Bootcamp",
+                  platform: "Udemy",
+                  date: "2023",
+                ),
+                const SizedBox(height: 12),
+                CourseCard(
+                  title: "Google Data Analytics Professional Certificate",
+                  platform: "Coursera",
+                  date: "2024",
+                ),
+                const SizedBox(height: 12),
+                CourseCard(
+                  title: "Postman API Fundamentals Student Expert",
+                  platform: "Postman",
+                  date: "2024",
                 ),
               ],
             ),

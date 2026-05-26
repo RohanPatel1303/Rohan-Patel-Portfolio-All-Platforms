@@ -43,7 +43,7 @@ class SiteNavBar extends StatelessWidget{
         if(isWide)...[
           _NavLink(label: 'Home', onTap: ()=>context.go('/')),
           _NavLink(label: 'Projects', onTap: ()=>context.go('/projects')),
-
+          _NavLink(label: 'Courses', onTap: ()=>context.go('/courses')),
           _NavLink(label: 'About', onTap: ()=>context.go('/about')),
 
           // _NavLink(label: 'Contact', onTap: ()=>context.go('/contact')),
@@ -64,6 +64,9 @@ class SiteNavBar extends StatelessWidget{
             ),
             PopupMenuItem(onTap:()=>context.go('/projects'),
                 child: const Text('Projects')
+            ),
+            PopupMenuItem(onTap:()=>context.go('/courses'),
+                child: const Text('Courses')
             ),
             PopupMenuItem(onTap:()=>context.go('/about'),
                 child: const Text('About')

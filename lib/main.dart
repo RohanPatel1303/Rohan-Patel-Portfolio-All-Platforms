@@ -3,11 +3,11 @@ import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:rohan_portfolio_website/pages/about_page.dart';
+import 'package:rohan_portfolio_website/pages/courses_page.dart';
 import 'package:rohan_portfolio_website/pages/home_page.dart';
 import 'package:rohan_portfolio_website/pages/project_page.dart';
 import 'package:rohan_portfolio_website/theme.dart';
 import 'package:rohan_portfolio_website/theme_controller.dart';
-import 'package:rohan_portfolio_website/widgets/fade_slide_in.dart';
 import 'package:rohan_portfolio_website/widgets/nav_bar.dart';
 import 'package:rohan_portfolio_website/widgets/site_footer.dart';
 
@@ -30,6 +30,7 @@ class PortfolioApp extends StatelessWidget {
             routes: [
               GoRoute(path: "/",builder: (context,state)=>const HomePage(),),
               GoRoute(path: '/projects',builder: (context,state)=>const ProjectsPage()),
+              GoRoute(path: '/courses',builder: (context,state)=>const CoursesPage()),
               GoRoute(path: '/about',builder: (context,state)=>const AboutPage()),
               // GoRoute(path: '/contact',builder: (context,state)=>const ContactPage()),
     ]

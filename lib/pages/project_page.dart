@@ -36,16 +36,9 @@ class _ProjectsPageState extends State<ProjectsPage> {
       demoUrl: "https://rohandeadhackportfolio.netlify.app",
     ),
     ProjectData(
-      title: 'Pocket Budget',
-      description:
-          "Pocket Budget is a clean, cross-platform expense tracker built with Flutter. It helps you manage your finances with a simple interface to add, view, and edit expenditures.\n\nCore Concepts & Packages:\n• flutter_riverpod for state management.\n• drift for local data storage.\n• go_router for navigation.",
-      tech: ['Flutter', 'Dart', 'Riverpod', 'GoRouter', 'Freezed', 'Drift'],
-      repoUrl: 'https://github.com/deadhack1/rohan_portfolio_website',
-    ),
-    ProjectData(
       title: 'Kaizen',
       description:
-          "A business-oriented Android application designed to support continuous improvement and productivity enhancement within organizations. The app focuses on eliminating waste and improving efficiency by helping users identify, track, and manage process improvements directly from their mobile device. It reflects the core Kaizen philosophy of ongoing incremental progress and provides a tool for professionals to engage with improvement activities efficiently.",
+      "A business-oriented Android application designed to support continuous improvement and productivity enhancement within organizations. The app focuses on eliminating waste and improving efficiency by helping users identify, track, and manage process improvements directly from their mobile device. It reflects the core Kaizen philosophy of ongoing incremental progress and provides a tool for professionals to engage with improvement activities efficiently.",
       tech: [
         'Flutter',
         'Dart',
@@ -54,13 +47,27 @@ class _ProjectsPageState extends State<ProjectsPage> {
         'Microsoft SQL Server',
       ],
     ),
-    ProjectData(
-      title: 'Calculator',
-      description:
-          "Built a fully functional cross-platform calculator app using React Native, designed to run on both Android and iOS devices. Implemented core arithmetic operations with a clean, responsive user interface and intuitive button controls. Focused on state management, UI layout with React Native components, and delivering a smooth mobile experience. Demonstrated ability to structure a real-world app, handle user input, and apply JavaScript logic within a native-style framework.",
-      tech: ['React Native', 'React Hooks'],
-      repoUrl: 'https://github.com/RohanPatel1303/Calculator-React-Native.git',
+    // ProjectData(
+    //   title: 'Pocket Budget',
+    //   description:
+    //       "Pocket Budget is a clean, cross-platform expense tracker built with Flutter. It helps you manage your finances with a simple interface to add, view, and edit expenditures.\n\nCore Concepts & Packages:\n• flutter_riverpod for state management.\n• drift for local data storage.\n• go_router for navigation.",
+    //   tech: ['Flutter', 'Dart', 'Riverpod', 'GoRouter', 'Freezed', 'Drift'],
+    //   repoUrl: 'https://github.com/deadhack1/rohan_portfolio_website',
+    // ),
+    ProjectData(title: 'Clock In Clock Out', description: "Flutter mobile app for employee attendance management — tracks clock-in/out punches, calculates work hours, and automates payroll processing.", tech:['Flutter', 'Dart', 'Riverpod', 'GoRouter', 'Freezed', 'Drift'],
+      repoUrl: 'https://github.com/RohanPatel1303/ClockInClockOut.git',
     ),
+    ProjectData(title: 'Stock Pulse', description: 'This is a flutter application that is for managing inventory and other functions , I am connecting the supabase as the backend. and using provider as the state management tool.', tech: ['Flutter', 'Dart', 'Supabase', 'Provider'],
+      repoUrl: 'https://github.com/RohanPatel1303/stockpulse.git',
+    )
+
+    // ProjectData(
+    //   title: 'Calculator',
+    //   description:
+    //       "Built a fully functional cross-platform calculator app using React Native, designed to run on both Android and iOS devices. Implemented core arithmetic operations with a clean, responsive user interface and intuitive button controls. Focused on state management, UI layout with React Native components, and delivering a smooth mobile experience. Demonstrated ability to structure a real-world app, handle user input, and apply JavaScript logic within a native-style framework.",
+    //   tech: ['React Native', 'React Hooks'],
+    //   repoUrl: 'https://github.com/RohanPatel1303/Calculator-React-Native.git',
+    // ),
   ];
 
   @override
